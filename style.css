@@ -1,0 +1,28 @@
+<!--　a1.htmlのcss　-->
+#container {   
+    width: 100%;
+    float: left;
+    margin-right: -50px
+  }
+.main {
+    margin-right: -100px;
+    width: 100%;
+    float: right;
+}
+
+.main .main_inner {
+    margin-left: 100px;
+}
+
+.side {
+    width: 100px;
+    height: 100%;
+    float: left; 
+}
+
+.main content{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto; 
+}
+

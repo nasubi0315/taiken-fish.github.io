@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+<TITLE>標的型攻撃メール　体験</TITLE>
+
+<SCRIPT TYPE="text/javascript">
+var id = null;
+var pass = null;
+function DataReceive(){
+	var data = location.search.substring(1, location.search.length);
+		//エスケープされた文字をアンエスケープする
+	data = unescape(data);
+	data = data.split(",");
+	//alert("攻撃者はあなたのidは「"+data[0]+"」で、パスワードは「"+data[1]+"」と知ります");
+	//var p = document.createElement("p");
+   //   var text1 = document.createTextNode(data[0]);
+   //   document.body.appendChild(p).appendChild(text1);
+   //   var text2 = document.createTextNode(data[1]);
+   //   document.body.appendChild(p).appendChild(text2);
+      id = data[0];
+      pass = data[1];
+}
+function DataSend(){
+        //データを次のファイルにエスケープして渡す。
+     location.href = "fishing4.html?" + escape(id)  + "," +escape(pass);
+    // location.href = "fishing4.html?" + data[0] + "," +data[1];
+    // location.href = "http://pori2.net/";
+}
+window.onload = DataReceive;
+
+//-->
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<p align="center"><font size="5">システムエラーが発生しました。</font></p>
+
+
+<FORM NAME="form1">
+<p align="center"><font size="5">-<A href="fishing4.html" target="content" onclick="DataSend();return false">ログイン画面へ戻る</A>-</font></p>
+<!--<INPUT TYPE="button" VALUE="送信" onClick="DataSend();">--><br>
+</FORM>
+</BODY>
+</HTML>
+
+

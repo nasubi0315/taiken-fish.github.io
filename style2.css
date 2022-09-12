@@ -1,0 +1,109 @@
+/**/
+@charset "UTF-8";
+
+.textboard {
+  width: 80%;
+  /*height: 500px;*/
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 0 4px #FFF inset;
+  background-color: rgba(255,255,255,0.9);
+}
+
+
+.textboard2 {
+  width: 85%; 
+  /*height: 500px;*/
+  padding : 20px ;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 0 4px #FFF inset;
+  background-color: rgba(0,0,0,0.7);
+}
+
+
+
+.sample2 {
+    position: relative;
+    color: #000 ;
+    background: #dff952;
+    font-size: 16pt ;
+    line-height: 1;
+    margin: 20px -10px 20px -10px;
+    padding: 10px 5px 10px 20px;
+    box-shadow:1px 3px 7px 0px  #666666 ;
+    border-top:3px solid #d7f74e;
+}
+.sample2:after, sample2:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-top: 5px solid #333;
+}
+.sample2:after {
+    left: 0;
+    border-right: 5px solid #333;
+}
+.sample2:before {
+    right: 0;
+    border-left: 5px solid #333;
+}
+
+.sample3{
+ color: #000 ;
+ position:relative;
+ margin:0 -10px;
+ padding:10px 20px;
+ width:430px;
+ background:#E7E700;
+ box-shadow:0 3px 3px 0 rgba(0,0,0,0.1);
+}
+.sample3:before{
+ content:" ";
+ position:absolute;
+ top:-20px;
+ left:0;
+ width:450px;
+ height:0;
+ border-width:10px;
+ border-style:solid;
+ border-color:transparent;
+ border-bottom-color:#ffff00;
+}
+
+
+
+.type-pers-parent {
+  perspective: 100px;
+  -webkit-perspective: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.type-pers-child {
+  text-align: justify;
+  padding: 0%;
+  -webkit-animation: typetext linear 15s infinite;
+  color: #F1C40F;
+  letter-spacing: 1px;
+}
+ 
+@-webkit-keyframes typetext {
+   0% {transform: rotateX(45deg) translate(0,0);}
+  100% {transform: rotateX(45deg) translate(0,-400px);}
+}
+
+.test1 {
+  width: 96%;
+  margin: 2%;
+    text-align : left ;
+  /* プロパティは順に name, duration, timing-function です */
+  }

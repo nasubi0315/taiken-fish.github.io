@@ -1,0 +1,69 @@
+<!-- メールリスト -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <title>標的型攻撃メール　体験</title>
+        <!-- CSS -->
+        <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- 5000ミリ秒後にexample_pop.htmlへ飛ぶ -->
+        <script type="text/javascript">
+            function disp(){
+            location.href = "example_pop.html"
+            }
+        </script>
+    </head>
+
+    <body onLoad="setTimeout('disp()', 5000)"> 
+        <style type="text/css">
+            a.blocklink {
+                display: block;
+                width: 100%;
+                padding: 0px;
+                text-decoration: none;
+                color: black;
+            }
+            a span {
+                text-decoration: underline;
+                color: black;
+            }
+            a:hover {
+                background-color: #ffffcc;
+            }
+        </style>
+    
+    <img src="c-list.png">
+        
+    <div class="wrap">
+        <div class="main">
+            <div class="main_inner">
+                <div id="container">
+                    <table border="0" cellspacing="1" cellpadding="10" width="1050">
+                        <tr>
+                            <td bgcolor="#F1FEFF">
+                                <a href="maillist.html" class="blocklink">
+                                    <img src="clip.png"> <font size="-1">近藤彰浩　日程について　　おはようございます。会議の日程について確認したいことがあ…　　　　　2016/8/15 09:00</font>
+                                </a>
+                                <a href="maillist.html" class="blocklink">
+                                    <img src="clip.png"> <font size="-1">中川真由　納入の件　　　　おはようございます。納入の件でご連絡いたしました。確認の…　　　　　2016/8/11 09:00</font>
+                                </a>
+                                <a href="maillist.html" class="blocklink">
+                                    <img src="clip.png"> <font size="-1">安住真一　日程の連絡　　　おはようございます。来週の打ち合わせについて少々話したこ…　　　　　2016/8/10 09:00</font>
+                                </a>
+                            </td>
+                        </tr>
+                    </table> 
+                    <br>
+                    <font size="6" color="red">約5秒後に情報管理部からメールが届きます。<br>このままお待ちください。</font>
+                    <br><br><br><br><br><br>
+                </div>
+    </body>
+            </div>
+            <!-- メインカラムの内容 -->
+        </div>
+    </div>
+    <div class="side">
+        <img src="b.png" >
+    </div>
+</html>

@@ -1,0 +1,129 @@
+<!-- 解説 -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>標的型攻撃メール　体験</title>
+      <style type="text/css">
+         body{
+            width: 100%;
+            margin-left: 300px;
+            margin-right: 300px;
+         }
+
+         #wrap{ 
+         width: 960px;	   /*全体の幅を指定する*/  
+         margin: 0 auto;    /*マージンの指定をする、ブラウザ対策*/
+         }
+
+         h1{
+            color: black;
+            padding: 0.5em 0;
+            border-top: solid 3px #7db4e6;
+            border-bottom: solid 3px #7db4e6
+         }
+
+         h2{
+            padding: 0.5em;
+            color: black;
+            background-color: #eaf4fc;
+            border-left: solid 5px #7db4e6;
+         }
+         .solid {
+            
+            background: #ebf6f7;
+            width: 400px;   
+         }
+
+         h3{
+            padding: 0.25em 0.5em;
+            color: #494949;
+            background-color: transparent;
+            border-left: solid 5px #7db4e6;
+         }
+
+         .area1{
+            background: #eaf4fc;
+            width: 450px;
+            padding: 1.5em;
+         }
+
+         .area2{
+            background: #eaf4fc;
+            width: 450px;
+            padding: 1.5em;
+
+         }
+      </style>
+      <h1>解説</h1>
+   </head>
+   <body>
+         <div class="main content">
+            <p>今回は標的型攻撃メール（フィッシングサイトバージョン）を体験していただきました。</p>
+            <p>
+               ここでは種類と対策を解説いたします。
+            </p>
+            
+               <ul class="solid">
+                  <p>＜目次＞</p>
+                  <li>標的型攻撃メールの種類
+                     <ul>
+                        <li><a href="#fish">フィッシングサイト</a></li>
+                        <li><a href="#ransom">ランサムウェア</a></li>
+                        <li><a href="#virus">ウイルス</a></li>
+                     </ul>
+                  </li>
+                  <li>標的型攻撃メールの対策
+                     <ul>
+                        <li><a href="#fish">メールの差出人を確認する</a></li>
+                        <li><a href="#ransom">ファイルの拡張子を確認する</a></li>
+                        <li><a href="#virus">本文をよく見る</a></li>
+                     </ul>
+                  </li>
+               </ul>         </div>
+
+            <h2>標的型攻撃メールの種類</h2>
+            <h3><a id="fish">1.フィッシングサイト</a></h3>
+            <p>偽物のサイト（フィッシングサイト）にアクセスさせて、情報を入力させることで情報を盗む攻撃</p>
+            <h3><a id="ransom">2.ランサムウェア</a></h3>
+            <p>入手した情報を暗号化して、解読できないようにすることで身代金を要求する攻撃</p>
+            <h3><a id="virus">3.ウイルス</a></h3>
+            <p>ウイルスを仕込んだファイルにアクセスさせて、パソコンをウイルスに感染させる攻撃</p>
+            <br>
+            <h2>標的型攻撃メールの見分け方</h2>
+            <h3><a id="fish">1.メールの差出人を確認する</a></h3>
+            <p>メールアドレスは簡単に偽装することができます。差出人のメールアドレスがフリーメールアドレスの場合は注意しましょう。<br>
+            また、知らない人からのメールを開封する際も注意が必要です。</p><br>
+            <div class="area1">
+               <p>（例）</p><img src="mail-kousei.png" ><br>
+               <p>※厚生労働省なのにフリーメールアドレスはおかしい　など。</p>
+            </div>
+            <h3><a id="ransom">2.ファイルの拡張子を確認する</a></h3>
+            <p>ファイルには拡張子というファイルの種類を表す文字列があります。<br>
+            拡張子が２つ付いている場合やアイコンと拡張子が一致しない場合は、開かないようにしましょう。</p>
+            <div>
+               <p>＜拡張子の偽造＞</p>
+               <img src="word1.png">
+            </div>
+            <div class="area2">
+               <p>＜２重拡張子＞</p>
+               <img src="word2.png"><img src="word3.png">
+            </div>
+            <h3><a id="virus"></a>3.本文をよく見る</h3>
+            <p>ファイルやリンクのクリックを促すような文章のある場合は、しっかり文章を読み直して、クリックする必要があるかを考えましょう。<br>
+            また、日本語ではあまり使わない漢字（繁体字、簡体字）や言い回しがおかしい文章のメールの場合は、海外から送信されたメールの可能性があります。</p>
+            <br>
+
+            <h2 >もし標的型攻撃メールを開けてしまったら</h2>
+            <p>標的型攻撃メールを開けてしまった場合は<br><font size="5" color="red">LANケーブルを抜く（感染拡大防止）・上司や情報セキュリティ管理者に報告</font><br>
+               <img src="lan.png" width="15%" height="15%"><img src="hpukoku.png" width="15%" height="15%"><br>をお願いします。</p><br>
+               <p><font size="5px">また、ランサムウェアでは身代金を要求する画面が表示されますが<strong>お金を払っても復元されない</strong>可能性があるので<font color="red">お金を払わないでください。</font><br>
+                  ※普段からバックアップをとるようにしましょう</font></p>
+            <p>以上で体験は終わりです。<br>
+               お疲れさまでした。<br>
+            このタブを閉じてください。</p>
+         </div>
+         
+   </body>
+</html>

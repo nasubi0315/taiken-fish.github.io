@@ -1,0 +1,42 @@
+<!--社内システム　ログインサイト-->
+<html>
+    <head>
+        <META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+        <TITLE>標的型攻撃メール　体験</TITLE>
+        <script TYPE="text/javascript">
+        
+            function DataSend(){
+                //データを次のファイルにエスケープして渡す。
+                    if (document.form1.text1.value == "" || document.form1.text2.value == "") {
+                        alert("IDとパスワードに適当な値を入力してください");
+                    }else if (document.form1.text1.value.indexOf(' ') != -1 || document.form1.text1.value.indexOf('　') != -1 || document.form1.text2.value.indexOf(' ') != -1 || document.form1.text2.value.indexOf('　') != -1) {   
+                        alert("IDとパスワードに空白を入力しないでください");
+                    }else {
+                        location.href = "fishing3.html?" + escape(document.form1.text1.value) + "," +escape(document.form1.text2.value);
+                    }
+        
+            }
+        </script>
+    </head>
+    <body>
+        <br><br>
+        <div class="box">
+            <h1 align="center">社内システムログインサイト</h1>
+            <FORM NAME="form1" >
+                <p align="center">ID　　　　　<INPUT TYPE="text" NAME="text1" width="100%"><br></P>
+                <p align="center">パスワード　<INPUT TYPE="password" NAME="text2" width="100%"><br></P>
+            
+                <center>
+                    <a href="#" onClick="DataSend();"><img src="aaaaa.png" ></a><br>
+                    <img src="button.png" >
+                </center>
+            </FORM>
+        
+            <link type="text/css" rel="stylesheet" href="guest.css" />
+        
+            <link type="text/css" rel="stylesheet" href="style1.css" />
+            </div>
+            <p align="center"><FONT SIZE="5" color="red">適当にIDとパスワードを入力して送信ボタンを押してください。<br></FONT><br></p>
+        </div>    
+    </body>
+</html>

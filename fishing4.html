@@ -1,0 +1,85 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+  Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>標的型攻撃メール　体験</title>
+
+    <SCRIPT TYPE="text/javascript">
+   
+function DataReceive(){
+	var data = location.search.substring(1, location.search.length);
+		//エスケープされた文字をアンエスケープする
+	data = unescape(data);
+	data = data.split(",");
+	alert("攻撃者にあなたの情報（id「"+data[0]+"」とパスワード「"+data[1]+"」）が漏洩しました");
+      target = document.getElementById("output");
+            target.innerHTML = "攻撃者にあなたの情報（id「"+data[0]+"」とパスワード「"+data[1]+"」）が漏洩しました。";
+            document.getElementById("output").style.color = "red";
+}
+window.onload = DataReceive;
+
+
+    </script>
+
+    <style type="text/css">
+    <!--
+   body { 
+    background-color:#fafafc
+    }
+ 
+    .btn {
+        background: #EEE;
+        border-top: 1px solid #DDD;
+        border-left: 1px solid #DDD;
+        border-right: 1px solid #BBB;
+        border-bottom: 1px solid #BBB;
+        color:#111;
+        width: 100px;
+        padding: 3px 0;
+    }
+    -->
+    </style>
+</head>
+<body>
+<br><br>
+<div class="box">
+<h1 align="center">社内システムログインサイト</h1>
+<FORM NAME="form1" >
+<p align="center">ID　　　　　<INPUT TYPE="text" NAME="text1" ><BR></P>
+<p align="center">パスワード　<INPUT TYPE="password" NAME="text2" ><BR></P>
+
+<center><a href="" onclick="DataSend();"><img src="aaaaa.png" ></a><br><img src="button.png" ></center></FORM>
+
+
+
+
+
+
+</div>
+<br><br>
+
+<link type="text/css" rel="stylesheet" href="guest.css" />
+<link type="text/css" rel="stylesheet" href="guest2.css" />
+
+<link type="text/css" rel="stylesheet" href="style1.css" />
+
+</div>
+
+<div class="textboard">
+
+<p > <div class="test1" id="output"></div></p>
+<p　align="center">　　どうやら偽の社内システムサイトにログイン情報を書き込んでしまったみたいです。<br>
+    　　どうしたら防ぐことができたのでしょうか。
+    解説を見てみましょう。</p>
+<p align="center"><a href="kaisetu.html"><font size ="6">解説へ</font></a></p>
+
+
+</div>
+
+
+
+</div></div>
+
+</body>
+</html>
